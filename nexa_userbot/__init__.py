@@ -10,7 +10,8 @@ CMD_HELP = {}
 StartTime = time()
 
 NEXAUB = Client(
-    api_hash=Config.API_HASH,
+    "NexaUserBot",  # Optional session name (can be any string)
     api_id=Config.APP_ID,
-    session_name=Config.PYRO_STR_SESSION
+    api_hash=Config.API_HASH,
+    session_string=Config.PYRO_STR_SESSION  # ✅ Corrected keyword
 )
